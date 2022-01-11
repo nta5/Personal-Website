@@ -1,0 +1,123 @@
+/***************************************************/
+/* General CSS */
+/**************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Cabin&display=swap");
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2fbe0;
+    font-size: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+}
+
+/***************************************************/
+/* Navbar */
+/**************************************************/
+nav {
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    background-color: #0b7a75;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 2%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover,
+ul li a:focus {
+    margin-left: 5%;
+    color: black;
+}
+
+.name {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+}
+
+#dropbtn {
+    border: none;
+    position: fixed;
+    display: inline-block;
+    right: 3vw;
+    top: 1vh;
+    width: 50px;
+    max-height: 75%;
+    filter: brightness(0) invert(1);
+}
+
+/***************************************************/
+/* Dropdown menu */
+/**************************************************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #0b7a75; /* Fallback color */
+}
+
+.modal-content {
+    color: #fefefe;
+    font-size: 5rem;
+    margin: 10vh auto;
+    padding: 30px;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content li {
+    display: block;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/***************************************************/
+/* Media query */
+/**************************************************/
+@media only screen and (max-width: 800px) {
+    nav ul a {
+        display: none;
+    }
+    .modal-content {
+        font-size: 4rem;
+    }
+}

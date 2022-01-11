@@ -1,0 +1,213 @@
+/***************************************************/
+/* Template */
+/**************************************************/
+.fancy-underline {
+    border-bottom: 2px solid currentColor;
+    line-height: 0.85;
+}
+
+.overflow {
+    width: 100vw;
+    min-width: 630px;
+    background-color: rgba(11, 122, 116, 0.815);
+    color: white;
+}
+
+.overflow.introduction {
+    background-image: linear-gradient(
+            rgba(11, 122, 116, 0.9),
+            rgba(11, 122, 116, 0.7)
+        ),
+        url("../images/teal-free-vector-watercolor-background.jpg");
+    background-position-y: bottom;
+    background-size: cover;
+}
+
+/***************************************************/
+/* Font styling */
+/**************************************************/
+.introduction {
+    grid-column: 1 / span 3;
+    height: 100vh;
+    text-align: center;
+}
+
+.introduction * {
+    position: relative;
+    top: 30%;
+}
+
+.introduction .container {
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction .container li {
+    width: 100px;
+    text-align: left;
+}
+
+h1.name {
+    font-size: 5rem;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.introduction ul li {
+    display: inline-block;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+section.viewAll {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-size: 24px;
+}
+
+section.viewAll a {
+    text-decoration: none;
+}
+
+/***************************************************/
+/* Profile styles */
+/**************************************************/
+#profile {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content / max-content;
+}
+
+#profile h1 {
+    grid-row: 1 / span 1;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#profile .division {
+    grid-row: 2 / span 1;
+    margin: auto;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: max-content;
+}
+
+#profile .division section {
+    padding-left: 10%;
+    padding-right: 15%;
+    border-right: solid 3px currentColor;
+}
+
+#profile .division section:nth-child(3) {
+    border-right: none;
+}
+
+/***************************************************/
+/* Project style */
+/**************************************************/
+#project {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: max-content;
+}
+
+#project h1 {
+    grid-column: 2;
+}
+
+#project div {
+    grid-column: 2;
+}
+
+#project div:last-child {
+    grid-column: 2;
+}
+
+#project a {
+    color: currentColor;
+    font-weight: bold;
+}
+
+#project a:hover {
+    color: black;
+}
+
+/***************************************************/
+/* Design style */
+/**************************************************/
+#design {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: max-content;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#design h1 {
+    grid-column: 2;
+}
+
+#design #gallery {
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#design #gallery img {
+    width: 25%;
+    min-width: 300px;
+    padding: 5px;
+}
+
+#design #gallery img:hover {
+    transform: scale(1.1);
+}
+
+#design .viewAll {
+    grid-column: 2;
+}
+
+#design .viewAll a {
+    color: black;
+    font-weight: bold;
+}
+
+#design .viewAll a:hover,
+#design .viewAll a:focus {
+    color: #0b7a75;
+}
+
+/***************************************************/
+/* Media query */
+/**************************************************/
+@media only screen and (min-width: 1000px) {
+    .introduction .container {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #profile {
+        margin-top: 10vh;
+    }
+    #profile .division {
+        grid-template-columns: max-content;
+    }
+
+    #profile .division section {
+        border-right: none;
+    }
+
+    #design #gallery img {
+        width: 50%;
+        min-width: 300px;
+        padding: 5px;
+    }
+}

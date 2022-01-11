@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+}
+h1 {
+    margin-top: 20vh;
+}
+
+h2 {
+    margin-left: 10vw;
+}
+.gallery {
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 2%;
+}
+
+.gallery img {
+    height: 250px;
+    padding: 10px;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/***************************************************/
+/* Media query */
+/**************************************************/
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    h1 {
+        margin-top: 15vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        margin-top: 10vh;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Melanie Ta - Profile</title>
+        <meta name="author" content="Melanie Ta" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./styles/general.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+
+        <!-- Firebase 8 related JS CDN -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+
+        <!-- Link to the api keys for your Firebase project -->
+        <script src="./scripts/firebaseAPI.js"></script>
+    </head>
+    <body>
+        <div class="introduction overflow">
+            <h1 class="name">Melanie Ta</h1>
+            <ul class="container">
+                <li><a href="https://github.com/nta5">GitHub</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ta-melanie/"
+                        >LinkedIn</a
+                    >
+                </li>
+                <li><a href="mailto:nngoc2701@gmail.com">Email</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div id="profile">
+                <h1 class="fancy-underline">My<br />Profile</h1>
+                <div class="division">
+                    <section>
+                        <h2>Programming</h2>
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Pascal</li>
+                        </ul>
+                        Currently learning:
+                        <ul>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Web and Mobile</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Firebase</li>
+                        </ul>
+                        Familiar:
+                        <ul>
+                            <li>Nativescript</li>
+                            <li>WordPress</li>
+                            <li>Wix</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Development Skills</h2>
+                        <ul>
+                            <li>Agile Development</li>
+                            <li>Version Control</li>
+                            <li>Unit Testing</li>
+                            <li>
+                                IDEs (CodeBlocks, PyCharm, IntelliJ, Visual
+                                Studio Code)
+                            </li>
+                        </ul>
+                    </section>
+                    <br />
+                </div>
+            </div>
+
+            <div id="project" class="overflow">
+                <h1 class="fancy-underline">Project<br />Highlights</h1>
+                <div>
+                    <section>
+                        <h2>Python Chatbot</h2>
+                        <p>
+                            A Python chatbot with 2 personalities which uses
+                            Regular Expression and dictionaries to create
+                            automatic conversations.
+                            <a href="./project.html">Read more...</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Text-based Adventure Game</h2>
+                        <p>
+                            A Python a game with ASCII maps, training sessions,
+                            level systems, and randomized battles.
+                            <a href="./project.html">Read more...</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>UCare</h2>
+                        <p>
+                            A web app which provides the seniors a friendly
+                            platform to read news, search for aid, and train
+                            their technical skills.
+
+                            <a href="./project.html">Read more...</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>QR Reading App</h2>
+                        <p>
+                            An Android application that can read QR codes from
+                            the camera of a local device.
+
+                            <a href="./project.html">Read more...</a>
+                        </p>
+                    </section>
+                    <section class="viewAll">
+                        <a href="./project.html">View All Projects</a>
+                    </section>
+                </div>
+            </div>
+
+            <div id="design">
+                <h1 class="fancy-underline">Design<br />Showcase</h1>
+                <div id="gallery">
+                    <img alt="Design" src="images/design/1.png" />
+                    <img alt="Design" src="images/design/17P_Ava1.png" />
+                    <img alt="Design" src="images/design/HPC_Error.png" />
+                    <img alt="Design" src="images/design/SSO_Cfs5.png" />
+                    <img alt="Design" src="images/design/TDN_ComingSoon.png" />
+                    <img alt="Design" src="images/design/TDN_CS.png" />
+                </div>
+                <section class="viewAll">
+                    <a href="./design.html">View All Designs</a>
+                </section>
+            </div>
+        </div>
+
+        <script src="./scripts/general.js"></script>
+    </body>
+</html>

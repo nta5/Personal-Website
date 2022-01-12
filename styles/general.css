@@ -125,6 +125,11 @@ nav .name a:focus {
     nav ul a {
         display: none;
     }
+
+    .name a {
+        display: block;
+    }
+
     .modal-content {
         font-size: 4rem;
     }

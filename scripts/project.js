@@ -1,4 +1,4 @@
-let currentIndex = 3;
+let currentIndex = 4;
 showSlide(currentIndex);
 
 function moveSlide(movement) {
@@ -9,6 +9,7 @@ function moveSlide(movement) {
 function showSlide(newIndex) {
     var slides = document.getElementsByClassName("slides");
     var dots = document.getElementsByClassName("dot");
+    var blogs = document.getElementsByClassName("blog-content");
 
     if (newIndex > slides.length) {
         currentIndex = 1;
@@ -22,9 +23,11 @@ function showSlide(newIndex) {
         if (i != currentIndex - 1) {
             slides[i].style.display = "none";
             dots[i].className = dots[i].className.replace("active", "");
+            blogs[i].style.display = "none";
         } else {
-            slides[currentIndex - 1].style.display = "block";
-            dots[currentIndex - 1].className += " active";
+            slides[i].style.display = "block";
+            dots[i].className += " active";
+            blogs[i].style.display = "block";
         }
     }
 }

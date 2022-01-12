@@ -66,3 +66,10 @@ function waitForElementToDisplay(
         }
     })();
 }
+
+/***************************************************/
+/* Navigate to Project page */
+/**************************************************/
+function sendSlideInfo(index) {
+    localStorage.setItem("slideIndex", index);
+}

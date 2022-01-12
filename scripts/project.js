@@ -1,4 +1,9 @@
 let currentIndex = 3;
+
+if (localStorage.getItem("slideIndex") != null) {
+    //get newsID from localStorage
+    currentIndex = localStorage.getItem("slideIndex");
+}
 showSlide(currentIndex);
 
 function moveSlide(movement) {

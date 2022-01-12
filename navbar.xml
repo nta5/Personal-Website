@@ -7,7 +7,7 @@
     </ul>
     <img id="dropbtn" src="./images/dropdown-icon.png">
 </nav>
-<aside id="dropdown-content" class="modal">
+<aside id="dropdown-content" class="modal slide">
     <span class="close">&times;</span>
     <ul class="modal-content">
         <li><a href="./index.html">Profile</a></li>

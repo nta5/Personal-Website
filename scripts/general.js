@@ -71,5 +71,10 @@ function waitForElementToDisplay(
 /* Navigate to Project page */
 /**************************************************/
 function sendSlideInfo(index) {
+    if (window.screen.width <= 500) {
+        localStorage.setItem("slideIndex", 3);
+
+        return;
+    }
     localStorage.setItem("slideIndex", index);
 }

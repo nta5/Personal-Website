@@ -16,6 +16,7 @@ body {
     padding: 0;
     margin: 0;
     position: absolute;
+    width: 100vw;
 }
 
 .container {
@@ -30,7 +31,6 @@ nav {
     z-index: 1; /* Sit on top */
     top: 0;
     width: 100%;
-    overflow: hidden;
     color: white;
     background-color: #0b7a75;
 }
@@ -70,8 +70,8 @@ nav .name a:focus {
     display: inline-block;
     right: 3vw;
     top: 1vh;
-    width: 50px;
-    max-height: 75%;
+    width: 5%;
+    max-height: 50px;
     filter: brightness(0) invert(1);
 }
 
@@ -132,6 +132,16 @@ nav .name a:focus {
 
     .modal-content {
         font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        max-width: 500px;
+    }
+
+    #dropbtn {
+        float: right;
     }
 }
 

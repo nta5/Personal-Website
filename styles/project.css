@@ -4,6 +4,7 @@
 .slideshow {
     width: 100vw;
     height: 92vh;
+    min-width: 500px;
 }
 
 .slides {
@@ -13,12 +14,11 @@
 .slides img {
     width: 100vw;
     height: 92vh;
+    min-width: 500px;
     filter: blur(1px) brightness(30%);
 }
 
 .slides.main img {
-    width: 100%;
-    height: 92vh;
     filter: blur(0) brightness(30%) hue-rotate(180deg);
 }
 
@@ -35,6 +35,7 @@
 }
 
 .next {
+    display: block;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -49,12 +50,14 @@
     position: relative;
     bottom: 20vh;
     text-align: center;
+    min-width: 400px;
 }
 
 .dots {
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
+    min-width: 400px;
 }
 .dot {
     cursor: pointer;
@@ -135,7 +138,20 @@ a:visited {
 /***************************************************/
 /* Media query */
 /**************************************************/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+    .slideshow {
+        height: 70vh;
+    }
+
+    .slideshow img {
+        height: 70vh;
+    }
+
+    .text {
+        position: relative;
+        bottom: 40vh;
+    }
+
     .blog-content section {
         width: 100%;
     }
@@ -143,6 +159,27 @@ a:visited {
     .blog-content section:nth-child(2n) {
         text-align: left;
         position: relative;
-        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .slideshow img {
+        max-height: 400px;
+    }
+
+    .prev,
+    .next {
+        top: 200px;
+    }
+
+    .dots {
+        position: relative;
+        top: 10px;
+    }
+    .blog-content h2 {
+        border-bottom: none;
+        line-height: normal;
     }
 }

@@ -8,7 +8,7 @@
 
 .overflow {
     width: 100vw;
-    min-width: 630px;
+    min-width: 650px;
     background-color: rgba(11, 122, 116, 0.815);
     color: white;
 }
@@ -158,11 +158,10 @@ section.viewAll a {
     grid-column: 1 / span 3;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 #design #gallery img {
-    width: 25%;
+    width: 25vw;
     min-width: 300px;
     padding: 5px;
 }

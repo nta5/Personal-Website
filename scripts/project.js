@@ -1,4 +1,4 @@
-let currentIndex = 4;
+let currentIndex = 3;
 showSlide(currentIndex);
 
 function moveSlide(movement) {

@@ -158,6 +158,7 @@ section.viewAll a {
     grid-column: 1 / span 3;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #design #gallery img {

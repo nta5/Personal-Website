@@ -98,21 +98,31 @@
 }
 
 .blog-content h2 {
-    text-decoration: underline;
     margin-top: 0;
     margin-bottom: 0;
+    border-bottom: solid 10px rgba(11, 122, 116, 0.1);
+    line-height: 0.5;
 }
 
-.showcase h2 {
-    text-align: center;
+.showcase h2,
+.showcase p {
+    border-bottom: none;
+    margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+a:visited {
+    color: currentColor;
 }
 
 .container {
     flex-wrap: wrap;
+    align-content: space-between;
 }
 
-.container img {
+.container img,
+.container iframe {
     width: 50%;
     padding: 10px;
 }

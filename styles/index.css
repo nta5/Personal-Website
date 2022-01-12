@@ -79,12 +79,13 @@ section.viewAll a {
     width: 100vw;
     min-width: 650px;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: max-content / max-content;
 }
 
-#profile h1 {
+#profile .profile-header {
     grid-row: 1 / span 1;
     margin-left: 10%;
     margin-right: 10%;

@@ -95,7 +95,7 @@ section.viewAll a {
     margin: auto;
     padding-left: 5%;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 30% 32%;
     grid-template-rows: max-content;
 }
 

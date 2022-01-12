@@ -76,6 +76,8 @@ section.viewAll a {
 /* Profile styles */
 /**************************************************/
 #profile {
+    width: 100vw;
+    min-width: 650px;
     margin-top: 5vh;
     display: grid;
     grid-template-columns: 100%;
@@ -84,8 +86,8 @@ section.viewAll a {
 
 #profile h1 {
     grid-row: 1 / span 1;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #profile .division {
@@ -143,6 +145,8 @@ section.viewAll a {
 /* Design style */
 /**************************************************/
 #design {
+    width: 100vw;
+    min-width: 650px;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: max-content;
@@ -199,11 +203,15 @@ section.viewAll a {
         margin-top: 10vh;
     }
     #profile .division {
-        grid-template-columns: max-content;
+        grid-template-columns: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #profile .division section {
         border-right: none;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #design #gallery img {

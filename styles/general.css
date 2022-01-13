@@ -139,6 +139,10 @@ nav .name a:focus {
 
     #dropbtn {
         float: right;
+
+        top: 1.25rem;
+        right: 1.5rem;
+        width: 1.5rem;
     }
     nav ul a {
         display: none;
@@ -150,6 +154,12 @@ nav .name a:focus {
 
     .modal-content {
         font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal-content {
+        font-size: 2rem;
     }
 }
 

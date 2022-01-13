@@ -30,9 +30,13 @@ nav {
     position: fixed;
     z-index: 1;
     top: 0;
-    width: 100%;
+    width: 100vw;
     color: white;
     background-color: #0b7a75;
+}
+
+nav div {
+    position: absolute;
 }
 
 nav ul li {
@@ -66,7 +70,7 @@ nav .name a:focus {
 
 #dropbtn {
     border: none;
-    position: fixed;
+    position: absolute;
     display: inline-block;
     right: 3vw;
     top: 1vh;
@@ -122,22 +126,9 @@ nav .name a:focus {
 /***************************************************/
 /* Media query */
 /**************************************************/
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
     #dropbtn {
         display: none;
-    }
-}
-@media only screen and (max-width: 800px) {
-    nav ul a {
-        display: none;
-    }
-
-    .name a {
-        display: block;
-    }
-
-    .modal-content {
-        font-size: 4rem;
     }
 }
 
@@ -148,6 +139,17 @@ nav .name a:focus {
 
     #dropbtn {
         float: right;
+    }
+    nav ul a {
+        display: none;
+    }
+
+    .name a {
+        display: block;
+    }
+
+    .modal-content {
+        font-size: 4rem;
     }
 }
 

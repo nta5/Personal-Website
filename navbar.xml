@@ -1,12 +1,14 @@
-<nav>
-    <ul>
-        <li class="name"><a href="./index.html">Melanie Ta</a></li>
-        <li><a href="./index.html">About</a></li>
-        <li><a href="./project.html" onclick="sendSlideInfo(3)">Projects</a></li>
-        <li><a href="./design.html">Designs</a></li>
-    </ul>
-    <img id="dropbtn" src="./images/dropdown-icon.png">
-</nav>
+<div>
+    <nav>
+        <ul>
+            <li class="name"><a href="./index.html">Melanie Ta</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./project.html" onclick="sendSlideInfo(3)">Projects</a></li>
+            <li><a href="./design.html">Designs</a></li>
+        </ul>
+        <img id="dropbtn" src="./images/dropdown-icon.png">
+    </nav>
+</div>
 <aside id="dropdown-content" class="modal slide">
     <span class="close">&times;</span>
     <ul class="modal-content">

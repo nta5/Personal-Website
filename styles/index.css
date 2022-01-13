@@ -218,7 +218,6 @@ section.viewAll a {
 
     #design #gallery img {
         width: 50%;
-        min-width: 300px;
         padding: 5px;
     }
 }

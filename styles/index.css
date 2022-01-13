@@ -41,6 +41,7 @@
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    text-decoration: underline;
 }
 
 .introduction .container li {

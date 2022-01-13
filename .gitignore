@@ -1,3 +1,4 @@
-/scripts/firebaseAPI.js
+scripts/firebaseAPI.js
 .vscode
-.firebase/hosting..cache
+.firebase
+images/

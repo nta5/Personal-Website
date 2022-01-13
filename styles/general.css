@@ -122,6 +122,11 @@ nav .name a:focus {
 /***************************************************/
 /* Media query */
 /**************************************************/
+@media only screen and (min-width: 800px) {
+    #dropbtn {
+        display: none;
+    }
+}
 @media only screen and (max-width: 800px) {
     nav ul a {
         display: none;

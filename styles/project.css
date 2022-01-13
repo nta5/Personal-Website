@@ -23,7 +23,7 @@
 .prev,
 .next {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 50vh;
     width: auto;
     padding: 16px;
@@ -142,14 +142,23 @@ a:visited {
 /***************************************************/
 /* Media query */
 /**************************************************/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .slideshow {
         height: 70vh;
     }
 
     .slideshow img {
         height: 70vh;
-        max-height: 500px;
+    }
+
+    .navigation {
+        width: 100vw;
+    }
+
+    .dots {
+        width: 100vw;
+        position: relative;
+        top: 10px;
     }
 
     .text {
@@ -157,8 +166,14 @@ a:visited {
         bottom: 40vh;
     }
 
+    .blog-content {
+        width: 80vw;
+    }
+
     .blog-content section {
         width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .blog-content section:nth-child(2n) {
@@ -166,35 +181,5 @@ a:visited {
         position: relative;
         margin-right: 0;
         margin-left: 0;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .slideshow,
-    .dots {
-        display: none;
-    }
-
-    .slideshow-small {
-        display: block;
-        width: 100vw;
-        min-width: 650px;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-
-    .slideshow-small h1 {
-        display: block;
-        border-bottom: solid 5px currentColor;
-        padding-top: 10vh;
-    }
-
-    .slideshow-small h1:last-child {
-        border-bottom: none;
-    }
-
-    .blog-content h2 {
-        border-bottom: none;
-        line-height: normal;
     }
 }

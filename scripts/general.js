@@ -71,7 +71,7 @@ function waitForElementToDisplay(
 /* Navigate to Project page */
 /**************************************************/
 function sendSlideInfo(index) {
-    if (window.screen.width <= 500) {
+    if (window.screen.width <= 800) {
         localStorage.setItem("slideIndex", 3);
 
         return;
